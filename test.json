@@ -7,25 +7,6 @@
       }
     },
     "body": {
-    //   "items": [
-    //     {
-    //       "type": "vertical",
-    //       "components": [
-    //         {
-    //           "type": "label",
-    //           "text": "First"
-    //         },
-    //         {
-    //           "type": "label",
-    //           "text": "Second"
-    //         },
-    //         {
-    //           "type": "label",
-    //           "text": "Third"
-    //         }
-    //       ]
-    //     }
-    //   ]
-    // }
+    }
   }
 }
