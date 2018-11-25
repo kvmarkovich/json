@@ -1,21 +1,34 @@
 {
   "$jason": {
     "head": {
-      "title": {
-        "type": "image",
-        "url": "https://nabazar.net/assets/images/na-bazar-logo-bordered.png"
-      }
-    },
-    "body": {
-      "header": {
-        "title": {
-          "type": "image",
-          "url": "https://nabazar.net/assets/images/na-bazar-logo-bordered.png"
+      ...
+      "actions": {
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://be.nabazar.net/api/v1/bazar/lot/"
+          },
+          "success": {
+            "type": "$render"
+          }
         }
       },
-      "background": {
-        "type": "html",
-        "url": "https://nabazar.net"
+      "templates": {
+        "body": {
+          "sections": [{
+            "items": {
+              "{{#each $jason.result.content}}": [{
+                "type": "label",
+                "text": "This is row {{name}}"
+              },
+              {
+                "type": "label",
+                "text": "{{description}}"
+              }
+              ]
+            }
+          }]
+        }
       }
     }
   }
