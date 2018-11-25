@@ -7,6 +7,12 @@
       }
     },
     "body": {
+      "header": {
+        "title": {
+          "type": "image",
+          "url": "https://nabazar.net/assets/images/na-bazar-logo-bordered.png"
+        }
+      },
       "background": {
         "type": "html",
         "url": "https://nabazar.net"
