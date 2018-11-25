@@ -20,7 +20,9 @@
         "body": {
           "sections": [{
             "items": {
-              "{{#each $jason.result.content}}": [{
+              "{{#each $jason.result.content}}": 
+              "type": "vertical",
+                  "components": [{
                 "type": "label",
                 "text": "This is row {{name}}"
               },
