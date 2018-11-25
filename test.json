@@ -1,6 +1,10 @@
 {
   "$jason": {
     "head": {
+      "title": {
+        "type": "label",
+        "text": "На Базар"
+      },
       "actions": {
         "$load": {
           "type": "$network.request",
@@ -14,16 +18,22 @@
       },
       "templates": {
         "body": {
-          "sections": [
-            {
-              "items": {
-                "{{#each $jason.result.content}}": {
-                  "type": "label",
-                  "text": "This is row {{name}}"
-                }
+          "sections": [{
+            "items": {
+              "{{#each $jason.content}}": {
+              "type": "vertical",
+                  "components": [{
+                "type": "label",
+                "text": "This is row {{name}}"
+              },
+              {
+                "type": "label",
+                "text": "{{description}}"
               }
+              ]
             }
-          ]
+            }
+          }]
         }
       }
     }
