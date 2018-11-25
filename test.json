@@ -1,41 +1,54 @@
 {
-  "$jason": {
-    "head": {
-      "title": {
-        "type": "label",
-        "text": "На Базар"
-      },
-      "actions": {
-        "$load": {
-          "type": "$network.request",
-          "options": {
-            "url": "https://be.nabazar.net/api/v1/bazar/lot/"
-          },
-          "success": {
-            "type": "$render"
-          }
-        }
-      },
-      "templates": {
-        "body": {
-          "sections": [{
-            "items": {
-              "{{#each $jason.content}}": {
-              "type": "vertical",
-                  "components": [{
+    "$jason": {
+        "head": {
+            "title": {
                 "type": "label",
-                "text": "This is row {{name}}"
-              },
-              {
-                "type": "label",
-                "text": "{{description}}"
-              }
-              ]
+                "text": "На Базар"
+            },
+            "actions": {
+                "$load": {
+                    "type": "$network.request",
+                    "options": {
+                        "url": "https://be.nabazar.net/api/v1/bazar/lot/"
+                    },
+                    "success": {
+                        "type": "$render"
+                    }
+                }
+            },
+            "templates": {
+                "body": {
+                    "sections": [
+                        {
+                            "items": {
+                                "{{#each $jason.result.content}}": {
+                                    "type": "vertical",
+                                    "components": [
+                                        {
+                                            "type": "label",
+                                            "text": "This is row {{name}}"
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "{{description}}"
+                                        },
+                                        {
+                                            "type": "image",
+                                            "url": "https://static.nabazar.net/images/small/lot/{{images[0]}}",
+                                            "style": {
+                                                "width": "100",
+                                                "corner_radius": "50",
+                                                "bottom": "100",
+                                                "right": "100"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
             }
-            }
-          }]
         }
-      }
     }
-  }
 }
