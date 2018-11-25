@@ -26,23 +26,14 @@
                                     "components": [
                                         {
                                             "type": "label",
-                                            "text": "This is row {{name}}"
+                                            "text": "This is row {{name}}",
+                                            "style":{
+                                              "color":"red"
+                                            }
                                         },
                                         {
                                             "type": "label",
                                             "text": "{{description}}"
-                                        },
-                                        {
-                                            "{{#if (images.length > 0)}": {
-                                                "type": "image",
-                                                "url": "https://static.nabazar.net/images/small/lot/{{images[0]}}",
-                                                "style": {
-                                                    "width": "100",
-                                                    "corner_radius": "50",
-                                                    "bottom": "100",
-                                                    "right": "100"
-                                                }
-                                            }
                                         }
                                     ]
                                 }
