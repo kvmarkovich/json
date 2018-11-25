@@ -1,7 +1,6 @@
 {
   "$jason": {
     "head": {
-      ...
       "actions": {
         "$load": {
           "type": "$network.request",
