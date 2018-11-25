@@ -43,8 +43,9 @@
                                                 }
                                             ],
                                             "style": {
-                                                "width": "100",
-                                                "corner_radius": "50",
+                                                "width": "300",
+                                                "height": "300",
+                                                "corner_radius": "20",
                                                 "bottom": "100",
                                                 "right": "100"
                                             }
