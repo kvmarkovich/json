@@ -18,21 +18,25 @@
       },
       "templates": {
         "body": {
-          "sections": [{
-            "items": {
-              "{{#each $jason.result.content}}": 
-              "type": "vertical",
-                  "components": [{
-                "type": "label",
-                "text": "This is row {{name}}"
-              },
-              {
-                "type": "label",
-                "text": "{{description}}"
+          "sections": [
+            {
+              "items": {
+                "{{#each $jason.result.content}}": {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "This is row {{name}}"
+                    },
+                    {
+                      "type": "label",
+                      "text": "{{description}}"
+                    }
+                  ]
+                }
               }
-              ]
             }
-          }]
+          ]
         }
       }
     }
