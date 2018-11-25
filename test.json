@@ -26,7 +26,7 @@
                                     "components": [
                                         {
                                             "type": "label",
-                                            "text": "This is row {{name}}",
+                                            "text": "{{name}}",
                                             "style": {
                                                 "font": "Avenir",
                                                 "size": "30",
