@@ -21,7 +21,7 @@
                     "sections": [
                         {
                             "items": {
-                                "{{#each $jason.result.content}}": {
+                                "{{#each $jason.content}}": {
                                     "type": "vertical",
                                     "components": [
                                         {
@@ -34,6 +34,18 @@
                                         {
                                             "type": "label",
                                             "text": "{{description}}"
+                                        },
+                                        {
+                                            "{{#if (images.length > 0)}": {
+                                                "type": "image",
+                                                "url": "https://static.nabazar.net/images/small/lot/{{images[0]}}",
+                                                "style": {
+                                                    "width": "100",
+                                                    "corner_radius": "50",
+                                                    "bottom": "100",
+                                                    "right": "100"
+                                                }
+                                            }
                                         }
                                     ]
                                 }
