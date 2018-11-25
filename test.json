@@ -28,7 +28,10 @@
                                             "type": "label",
                                             "text": "This is row {{name}}",
                                             "style": {
-                                                "color": "red"
+                                                "font": "Avenir",
+                                                "size": "30",
+                                                "color": "rgb(200,0,0)",
+                                                "padding": "10"
                                             }
                                         },
                                         {
