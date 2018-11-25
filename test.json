@@ -1,6 +1,10 @@
 {
   "$jason": {
     "head": {
+      "title": {
+        "type": "label",
+        "text": "На Базар"
+      },
       "actions": {
         "$load": {
           "type": "$network.request",
