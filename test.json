@@ -1,0 +1,31 @@
+{
+  "$jason": {
+    "head": {
+      "title" :{
+      	"type": "image",
+      	"url":"https://nabazar.net/assets/images/na-bazar-logo-bordered.png"
+      }
+    },
+    "body": {
+      {
+  "items": [{
+    "type": "vertical",
+    "components": [
+      {
+        "type": "label",
+        "text": "First"
+      }, 
+      {
+        "type": "label",
+        "text": "Second"
+      }, 
+      {
+        "type": "label",
+        "text": "Third"
+      }
+    	]
+  	}]
+	}
+    }
+  }
+}
